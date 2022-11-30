@@ -1,0 +1,88 @@
+/*btnAside style*/
+.aside_wrap {
+  position: fixed;
+  bottom: 5.8rem;
+  right: 3rem;
+  z-index: 5;
+}
+
+.aside_wrap .aside_btn_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+}
+
+.aside_wrap .aside_btn_area .btn_shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #1b1b1b;
+  -webkit-box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.06), inset 0px 5px 10px 0 rgba(255, 255, 255, 0.14);
+          box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.06), inset 0px 5px 10px 0 rgba(255, 255, 255, 0.14);
+  font-family: "NotoSansM";
+  font-size: 1.4rem;
+}
+
+.aside_wrap .aside_btn_area .btn_group button {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.aside_wrap .aside_btn_area .btn_group button.btn_down {
+  background-image: url("../../image/img/fix_arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.aside_wrap .aside_btn_area .btn_group button.btn_up {
+  background-image: url("../../image/img/fix_arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .aside_wrap {
+    bottom: 3rem;
+    right: 2rem;
+  }
+  .aside_wrap .aside_btn_area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  .aside_wrap .aside_btn_area .btn_shop {
+    width: 4.2rem;
+    height: 4.2rem;
+    font-size: 1rem;
+  }
+  .aside_wrap .aside_btn_area .btn_group button {
+    width: 4.2rem;
+    height: 4.2rem;
+    background-color: #000;
+  }
+}
