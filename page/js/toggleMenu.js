@@ -6,6 +6,7 @@ hamMenuList.forEach(function (item) {
     item.addEventListener("click", toggleMenu);
 });
 
+//toggleMenu
 function toggleMenu(item) {
     const target = item.currentTarget;
     const targetSub = item.currentTarget.children[1];

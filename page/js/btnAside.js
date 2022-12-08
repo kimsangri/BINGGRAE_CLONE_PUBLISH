@@ -2,6 +2,7 @@
 const btnDown = document.querySelector(".btn_down");
 const btnUp = document.querySelector(".btn_up");
 
+//scroll
 window.addEventListener("scroll", function () {
     if (this.scrollY > 150) {
         btnDown.style.display = "none";
@@ -12,10 +13,12 @@ window.addEventListener("scroll", function () {
     }
 });
 
+//btnUp
 btnUp.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
 })
 
+//btnDown
 btnDown.addEventListener("click", function () {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
 })

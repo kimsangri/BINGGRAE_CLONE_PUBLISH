@@ -1,12 +1,11 @@
 //3d effect script
-let mainLogo;
+const mainLogo = document.querySelector(".main_logo_box");
 let x = 0;
 let mouseX = 0;
 let speed = 0.01;
 
+//load
 window.addEventListener("load", function () {
-    mainLogo = document.querySelector(".main_logo_box");
-
     window.addEventListener("mousemove", mouseFunc);
 
     function mouseFunc(e) {
@@ -16,6 +15,7 @@ window.addEventListener("load", function () {
     effect();
 })
 
+//effect
 function effect() {
     mouseX += (x - mouseX) * speed;
 

@@ -1,11 +1,11 @@
 //btnHamberger script
-
-//btnHamberger
 const btnHamberger = document.querySelector(".btn_hamberger");
 const mainNav = document.querySelector(".main_nav");
 const hambergerMenu = document.querySelector(".hamberger_menu");
+const btnHamClose = document.querySelector(".btn_ham_close");
 const windowWidth = window.matchMedia("screen and (min-width: 1024px)");
 
+//btnHamberger
 btnHamberger.addEventListener("click", function (e) {
     e.currentTarget.classList.toggle("active");
     hambergerMenu.classList.toggle("active");
@@ -20,10 +20,7 @@ btnHamberger.addEventListener("click", function (e) {
     }
 });
 
-
 //btnHamClose
-const btnHamClose = document.querySelector(".btn_ham_close");
-
 btnHamClose.addEventListener("click", function () {
     hambergerMenu.classList.remove("active");
     btnHamberger.classList.remove("active");
