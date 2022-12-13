@@ -14,7 +14,7 @@ window.addEventListener("load", function () {
     }
 
     effect();
-})
+});
 
 function effect() {
     mouseX += (x - mouseX) * speed;

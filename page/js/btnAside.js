@@ -14,8 +14,8 @@ window.addEventListener("scroll", function () {
 
 btnUp.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
-})
+});
 
 btnDown.addEventListener("click", function () {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-})
+});
