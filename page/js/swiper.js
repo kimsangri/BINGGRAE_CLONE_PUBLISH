@@ -1,5 +1,6 @@
 //swiper script
 
+//categorySwiper
 const categorySwiper = new Swiper(".cateSwiper", {
     cssMode: true,
     observer: true,
@@ -61,7 +62,7 @@ const categorySwiper = new Swiper(".cateSwiper", {
     }
 });
 
-
+//brandShopSwiper
 const brandShopSwiper = new Swiper(".brandSwiper", {
     cssMode: true,
     observer: true,
