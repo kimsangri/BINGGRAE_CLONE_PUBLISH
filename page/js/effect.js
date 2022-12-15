@@ -19,7 +19,7 @@ window.addEventListener("load", function () {
 function effect() {
     mouseX += (x - mouseX) * speed;
 
-    mainLogo.style.transform = "translate3d(" + -(mouseX / 500) + "px,0,0) rotate3d(0,1,0," + -(mouseX / 80) + "deg)";
+    mainLogo.style.transform = "rotate3d(0,1,0," + -(mouseX / 80) + "deg)";
 
     window.requestAnimationFrame(effect);
 }
